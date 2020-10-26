@@ -1,0 +1,7 @@
+- !layer
+
+- !host agent01
+
+- !grant
+  role: !layer
+  member: !host agent01
