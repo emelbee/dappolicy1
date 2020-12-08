@@ -13,12 +13,12 @@
   # These are normally granted together, but they are distinct
   #   just like read and execute bits on a filesystem.
   privileges: [ read, execute ]
-  roles: !group pipeline-consumers
+  roles: !group consumers
 
 # create a host, the api key will be returned
 - !host agent01
 
 # and add that host to that group pipeline-consumers
 - !grant
-  role: !group pipeline-consumers
+  role: !group consumers
   member: !host agent01
